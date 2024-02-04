@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Ингридиенты на {{ servings }} порцию(-й) пасты:
+<ul style="color: red; font-size: 25px">
+    <li>Спагетти, гр: <script>document.write( {{ spaghetti }} * {{ servings }})</script></li>
+    <li>Пармезан, гр: <script>document.write( {{ parmesan }} * {{ servings }})</script></li>
+    <li>Сливочное масло, гр: <script>document.write( {{ butter }} * {{ servings }})</script></li>
+</ul>
+<a href="/">Главная страница</a>
+</body>
+</html>

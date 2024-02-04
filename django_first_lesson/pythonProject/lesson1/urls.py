@@ -17,11 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app.views import index, time, workdir
+from app.views import index, omlet, pasta, buter #html, pagi, workdir, hello,
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('current_time/', time, name='time'),
-    path('workdir/', workdir, name='workdir'),
     path('', index),
+    # path('workdir/', workdir, name='workdir'),
+    # path('hello/', hello, name='hello'),
+    # path('html/', html, name='html'),
+    # path('pagi/', pagi, name='pagi'),
+    path('omlet/', omlet, name='omlet'),
+    path('pasta/', pasta, name='pasta'),
+    path('buter/', buter, name='buter'),
 ]

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Ингридиенты на {{ servings }} порцию(-й) омлета:
+<ul style="color: red; font-size: 25px">
+    <li>Яйца, шт: <script>document.write( {{ eggs }} * {{ servings }})</script></li>
+    <li>Молоко, л: <script>document.write( {{ milk }} * {{ servings }})</script></li>
+    <li>Соль, ч.л.: <script>document.write( {{ salt }} * {{ servings }})</script></li>
+</ul>
+<a href="/">Главная страница</a>
+</body>
+</html>

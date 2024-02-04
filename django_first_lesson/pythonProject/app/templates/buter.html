@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Ингридиенты на {{ servings }} порцию(-й) бутерброда:
+<ul style="color: red; font-size: 25px">
+    <li>Хлеб, ломтик: <script>document.write( {{ bread }} * {{ servings }})</script></li>
+    <li>Колбаса, ломтик: <script>document.write( {{ sausage }} * {{ servings }})</script></li>
+    <li>Сыр, ломтик: <script>document.write( {{ cheese }} * {{ servings }})</script></li>
+    <li>Помидор, ломтик: <script>document.write( {{ tomato }} * {{ servings }})</script></li>
+</ul>
+<a href="/">Главная страница</a>
+</body>
+</html>
