@@ -17,16 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app.views import index, omlet, pasta, buter #html, pagi, workdir, hello,
+from app.views import dish_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    # path('workdir/', workdir, name='workdir'),
-    # path('hello/', hello, name='hello'),
-    # path('html/', html, name='html'),
-    # path('pagi/', pagi, name='pagi'),
-    path('omlet/', omlet, name='omlet'),
-    path('pasta/', pasta, name='pasta'),
-    path('buter/', buter, name='buter'),
+    path('<dish>/', dish_view, name='dish'),
 ]
