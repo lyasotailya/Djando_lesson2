@@ -25,11 +25,14 @@ DATA = {
 
 def dish_view(request, dish):
     servings = int(request.GET.get('servings', 1))
+    dish_data = DATA.get(dish)
+    dct = {}
     context = {
-        'recipe': DATA.get(dish)
+        'recipe': dct
     }
-    for key, value in context.get('recipe').items():
-        value *= servings
-        context.get('recipe').update({key: value})
+    print(dish_data)
+    for key, value in dish_data.items():
+        value1 = value * servings
+        context.get('recipe').update({key: value1})
     return render(request, 'page.html', context)
 
