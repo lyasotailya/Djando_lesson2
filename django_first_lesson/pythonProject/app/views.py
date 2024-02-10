@@ -30,7 +30,6 @@ def dish_view(request, dish):
     context = {
         'recipe': dct
     }
-    print(dish_data)
     for key, value in dish_data.items():
         value1 = value * servings
         context.get('recipe').update({key: value1})
